@@ -73,7 +73,7 @@ const fetchProducts = async () => {
 };
 
 // ⏱️ Fetch every 30 second
-setInterval(fetchProducts, 30 * 1000);
+setInterval(fetchProducts, 10 * 1000);
 
 // ✅ Handle /start command
 bot.onText(/\/start/, (msg) => {
