@@ -70,7 +70,7 @@ const fetchProducts = async () => {
   }
 };
 
-// ⏱️ Fetch every 30 seconds
+// ⏱️ Fetch every 30 second
 setInterval(fetchProducts, 30 * 1000);
 
 // ✅ Handle /start command
