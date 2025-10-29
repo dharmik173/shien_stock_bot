@@ -1,7 +1,7 @@
 {
-  "name": "node-express-web",
+  "name": "express-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple hello world express.js server.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.13.1",
     "ejs": "^3.1.9",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "node-telegram-bot-api": "^0.66.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  }
+  },
+  "keywords": []
 }
