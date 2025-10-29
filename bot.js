@@ -108,6 +108,7 @@ bot.onText(/\/stop/, (msg) => {
 
 
 app.get("/", (req, res) => {
+  console.log(`Ok`);
   res.send("✅ SHEIN Stock Bot is running");
 });
 
