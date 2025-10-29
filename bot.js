@@ -1,6 +1,8 @@
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
 const fs = require("fs");
+const express = require("express");
+const app = express();
 
 // 🔹 Telegram Bot Token
 const BOT_TOKEN = "8315557085:AAEZaJRt0Sx5Fi_xXwX29xVVMyjXlv4ZtDc";
@@ -102,3 +104,15 @@ bot.onText(/\/stop/, (msg) => {
     bot.sendMessage(chatId, "You’re not subscribed yet.");
   }
 });
+
+
+
+app.get("/", (req, res) => {
+  res.send("✅ SHEIN Stock Bot is running");
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🌐 Server running on port ${PORT}`);
+});
+
