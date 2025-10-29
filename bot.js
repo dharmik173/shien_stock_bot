@@ -62,7 +62,7 @@ const fetchProducts = async () => {
     if (count >= 15) {
       await sendToAll(`🚨 ALERT! SHEIN Product Count is now ${count} (above 15)`);
     } else {
-      console.log("ℹ️ Count below or equal to 15 — no alert sent.");
+      console.log("ℹ️ Count below or equal to 15 — no alert sent");
     }
   } catch (error) {
     console.error("❌ Error fetching products:", error.message);
