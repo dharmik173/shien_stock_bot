@@ -78,7 +78,7 @@ const fetchProducts = async () => {
 
     console.log(`📦 Fetched ${products.length} products`);
     const now = Date.now();
-    const oneHour = 60 * 60 * 1000;
+    const oneHour = 5 * 60 * 1000;
 
     const newProducts = products.filter((p) => {
       if (!p?.code) return false;
@@ -115,7 +115,7 @@ const fetchProducts = async () => {
 };
 
 // 🔁 Fetch every 10 sec
-setInterval(fetchProducts, 10 * 1000);
+setInterval(fetchProducts, 5 * 1000);
 
 // ✅ Telegram Commands
 bot.onText(/\/start/, (msg) => {
